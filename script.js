@@ -1,53 +1,46 @@
 var submitnew = document.getElementById("submitnewbtn");
 var newtitle = document.getElementById("newposttitle");
 var newcontent = document.getElementById("newpostcontent");
-var database = firebase.database();
-
-submitnew.addEventListener('click', (e) => {
-    e.preventDefault();
+submitnew.onclick = function() {
     let time = new Date();
+    console.log("CLICKED");
     let now = (time.getMonth()+1) + "." + time.getDate() + "." + time.getFullYear() + " " + time.getHours() + ":" + time.getMinutes();
-    console.log(now);
-    let ref = database.ref('/POSTID/');
-    let newId = {
-        postId: 0
-    };
-    ref.on('value', (snapshot) => {
-        console.log(snapshot.val().postId);
-        newId.postId = snapshot.val().postId + 1;
-        console.log(newId);
-    })
-    ref.update(newId);
-    database.ref('/posts/' + newId.postId).set({
+    localStorage.setItem("id", id + 1);
+    var post = {
         title: newtitle.value,
         date: now,
         content: newcontent.value,
-        titleid: "posttitle" + newId.postId,
-        dateid: "date" + newId.postId,
-        contentid: "content" + newId.postId,
+        titleid: "posttitle" + id,
+        dateid: "date" + id,
+        contentid: "content" + id,
         upvotes: 0,
         downvotes: 0
-    });
+    }
+    localStorage.setItem(id, JSON.stringify(post));
     localStorage.setItem("bool", true)
-    localStorage.setItem("id", newId.postId);
     window.location.href = "index.html";
-});
-if (localStorage.getItem("bool")) {
-    let newD = document.createElement("div");
-    newD.setAttribute("class", "post" + localStorage.getItem("id"));
+};
+localStorage.setItem("bool", false);
+var id = Number(localStorage.getItem("id"));
+if (localStorage.getItem("bool") == "true") {
+    console.log("HAPPY");
+    /*let newD = document.createElement("div");
+    newD.setAttribute("class", "post" + id);
     document.body.appendChild(newD);
     let newT = document.createElement("a");
-    newT.setAttribute("class", "posttitle" + localStorage.getItem("id"));
+    newT.setAttribute("class", "posttitle" + id);
     newT.setAttribute("class", "posttitle");
-    newT.setAttribute("href", "comments.html");
-    let newDate = document.creatElement("p");
-    document.setAttribute("class", "date" + localStorage.getItem("id"));
-    document.setAttribute("class", "postdate");
-    let content = document.creatElement("p");
-    document.setAttribute("class", "content" + localStorage.getItem("id"));
-    document.setAttribute("class", "content");
-    let ref = database.ref('/posts/' + localStorage.getItem("id"));
-    ref.on('value', (snapshot)=> {
-        
-    })
+    newT.setAttribute("href", "comments.html");*/
+    let newDate = document.createElement("p");
+    newDate.setAttribute("class", "date" + id);
+    newDate.setAttribute("class", "postdate");
+    var a = JSON.parse(localStorage.getItem(id));
+    console.log(a);
+    let temp = document.createTextNode(a.date);
+    console.log(JSON.parse(localStorage.getItem(id)).date);
+    newDate.appendChild(temp);
+    document.body.appendChild(newDate);
+    let content = document.createElement("p");
+    content.setAttribute("class", "content" + id);
+    content.setAttribute("class", "content");
 }
