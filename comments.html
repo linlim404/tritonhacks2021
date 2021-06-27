@@ -4,29 +4,48 @@
         <title>title of post</title>
     </head>
     <body>
+        <script src="script.js"></script>
+        <button id="backbtn">back</button>
         <a href="index.html">back</a>
-        <div id="post">
-            <h1>title of post</h1>
-            <p id = "usernamecom1">username</p>
-            <p id = "datecom1">date</p>
-            <p id = "flaircom1">flair</p>
-            <p id = "pccom1">
+        <div class="post">
+            <h1 class="posttitle0" class="posttitle">title of post</h1>
+            <p class="user0" class="username">username>username</p>
+            <p class="date0" class="postdate">date>date</p>
+            <p class="flair0" class="flairs">flair>flair</p>
+            <p class="content0" class="content">
                 post content
             </p>
-            <p id = "upvotecom1">upvote</p>
-            <input type="radio" name="postvotes">
-            <p id = "downvotecom1">downvote</p>
-            <input type="radio" name="postvotes">  
+            <p class="numupvotes" class="votestxt">upvote</p>
+            <input type="radio" name="postvotes" class="upvotes">
+            <p class="numdownvotes" class="votestxt">downvote</p>
+            <input type="radio" name="postvotes" class=downvotes>  
         </div>
-        <div class="comment">
-            <p id = "usernamecom2">username</p>
-            <p id = "datecom2">date</p>
-            <p  id = "flaircom2">flair</p>
-            <p id = "cccom2">comment content</p>
-            <p id = "upvotecom2">upvote</p>
-            <input type="radio" name="commentvotes"> 
-            <p id = "downvotecom2">downvote</p>
+        <div id="addcomments">
+            <p id="addcommenttxt">add comment</p>
+            <input type="text" id="commentinput">
+            <button id="addcommentbtn">+</button>
+        </div>
+        <div class="comment0" class="comments">
+            <p class="comuser0" class="comusername">username</p>
+            <p class="comdate0" class="compostdate">date</p>
+            <p class="comflair0" class="comflairs">flair</p>
+            <p class="comcontent0" class="comcontent">comment content</p>
+            <p class="comnumupvotes0" class="comvotestxt">upvote</p>
+            <input type="radio" name="commentvotes" class="upvotes"> 
+            <p class="numdownvotes" class="votestxt">downvote</p>
             <input type="radio" name="commentvotes">
+            <div class="addreply">   
+                <p>add reply</p>
+                <input type="text">
+            </div>
+            <div class="reply0" class="replies">
+                <p class="repuser0" class="repusername">username</p>
+                <p class="repdate0" class="reppostdate">date</p>
+                <p class="repcontent0" class="repcontent">comment content</p>
+                <p class="repnumupvotes0" class="repvotestxt">upvote</p>
+                <input type="radio" name="repentvotes" class="upvotes"> 
+                <p class="numdownvotes" class="votestxt">downvote</p>
+            </div>
         </div>
     </body>
 </html>

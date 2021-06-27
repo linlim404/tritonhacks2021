@@ -1,2 +1,1 @@
-console.log("doggo");
-console.log("ugly cat");
+const btn = document.getElementById()
