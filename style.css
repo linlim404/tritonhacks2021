@@ -1,0 +1,312 @@
+body{
+    background-color:#0c0d21
+    ;
+    
+    }
+    #babakumtitle{
+        color:rgb(214, 123, 123);
+        text-align:left;
+        position:relative;
+        top:60%;
+        bottom:100%;
+        padding-left:15%;
+        font-size:60px;
+        font-weight:bold;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+        }
+    #newpostbtn {
+    position:absolute;
+    vertical-align:middle;
+    color: blue;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    left:68%;
+    top:10%;
+    background-color:rgb(65, 65, 65);
+    color:rgb(255, 255, 255);
+    border-radius:10px;
+    }
+    .post0{
+        position:relative;
+    border-width:5px;
+    border:#ffffff;  
+    border-style:solid;
+    border-radius:20px;
+    border-width:1.5px;
+    margin-left:10%;
+    margin-right:10%;
+    line-height:30px;
+    }
+    #posttitle{
+    color:rgb(255, 255, 255);
+    margin-left:5%;
+    top:10%;
+    position:absolute;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration:none;
+    
+    
+    }
+    #username{
+    position:absolute;
+    font-size:20px;
+    left:81%;
+    bottom:20%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    }
+    #postdate{
+    position:relative;
+    left:84%;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size:20px;
+    bottom:20%;
+    }
+    #content{
+    position:absolute;
+    left:5%;
+    font-size:14px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(255, 255, 255);
+    top:25%;
+    
+    
+    }
+    #numupvotes{
+    position:absolute;
+    top:5%;
+    left:47.5%;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(2, 219, 111);
+    white-space:nowrap;
+    display:inline-block;
+    }
+    #numdownvotes{
+        position:absolute;
+    top:5%;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(219, 18, 18);
+    left:61.5%;
+    white-space:nowrap;
+    display:inline-block;
+    }
+    #upvotes{
+    top:60%;
+    position:absolute;
+    left:50%;
+    white-space:nowrap;
+    display:inline-block;
+    }
+    #downvotes{
+     top:60%;
+    position:absolute;
+    left:65%;
+    white-space:nowrap;
+    display:inline-block;
+    }
+    .post{
+    position:absolute;
+    top:25%;
+    left:17%;
+    }
+    #newposttitle{
+        position:relative;
+    width:400px;
+    left:30%;
+    top:20%;
+    
+    
+    }
+    #newpostdirections{
+    width:300px;
+    position:absolute;
+    color:white;
+    top:200%;
+    left:47%;
+    font-family:'Courier New', Courier, monospace;
+    
+    }
+    #newpostcontent{
+    position:absolute;
+    size:10px;
+    top:380%;
+    left:30%;
+    width:400px;
+    height:50px;
+    
+    }
+    #cancelbtn{
+    color:red;
+    background-color:rgb(65, 65, 65);
+    position:absolute;
+    top:42%;
+    left:34%;
+    width:100px;
+    height:40px;
+    
+    }
+    #submitnewbtn{
+        color:rgb(45, 187, 81);
+        background-color:rgb(65, 65, 65);
+        position:absolute;
+        left:58%;
+        top:42%;
+    width:100px;
+    height:40px;
+    
+    }
+    #backbtn{
+        background-color:rgb(65, 65, 65);
+        width:75px;
+        height: 40px;
+        font-size:20px;
+        font-family:Arial, Helvetica, sans-serif;
+    
+    }
+    #post{
+        position:relative;
+        border-width:5px;
+        border:#ffffff;  
+        border-style:solid;
+        border-radius:20px;
+        border-width:1.5px;
+        margin-left:10%;
+        margin-right:10%;
+        line-height:30px;
+    
+    }
+    .posttitle0{
+        color:white;
+    position:relative;
+    left:5%;
+    font-family:'Courier New', Courier, monospace;
+    
+    
+    }
+    .user0{
+    position:absolute;
+    color:white;
+    left:85%;
+    top:2%;
+    font-family:'Courier New', Courier, monospace;
+    }
+    .date0{
+        position:absolute;
+    left:87%;
+    top:15%;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    }
+    .content0{
+        position:absolute;
+        top:40%;
+    left:5%;
+    color:white;
+    }
+    .numupvotes{
+        position:absolute;
+    color:green;
+    left:50%;
+    top:10%;
+    
+    }
+    .numdownvotes{
+        position:absolute;
+    color:red;
+    left:60%;
+    top:10%;
+    
+    }
+    .upvotes2{
+        position:absolute;
+        left:51%;
+        top:66%;
+    
+    }
+    .upvotes{
+        position:absolute;
+    left:41%;
+    top:35%;
+    
+    }
+    .downvotes{
+        position:absolute;
+    left:62.5%;
+    top:65%;
+    
+    }
+    #addcommenttxt{
+        position:relative;
+    color:white;
+    left:10%;
+    
+    }
+    #commentinput{
+    position:relative;
+    left:10%;
+    
+    }
+    #addcommentbtn{
+    position:relative;
+    left:10%;
+    }
+    .comment0{
+        position:relative;
+        border-width:5px;
+        border:#ffffff;  
+        border-style:solid;
+        border-radius:20px;
+        border-width:1.5px;
+        margin-left:10%;
+        margin-right:10%;
+        line-height:30px;
+    
+    
+    }
+    .comuser0{
+        position:absolute;
+        color:white;
+        left:85%;
+        top:2%;
+        font-family:'Courier New', Courier, monospace;
+    
+    }
+    .comdate0{
+        position:absolute;
+    left:87%;
+    top:8%;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    
+    }
+    .comcontent0{
+    color:white;
+    
+    }
+    
+    .reply{
+    color:white;
+    }
+    .repuser0{
+        position:absolute;
+        color:white;
+        left:85%;
+        top:67%;
+        font-family:'Courier New', Courier, monospace;
+    }
+    .repdate0{
+        position:absolute;
+    left:87%;
+    top:74%;
+    color:white;
+    font-family:'Courier New', Courier, monospace; 
+    }
+    .repcontent0{
+    color:white;
+    }
+    
